@@ -26,6 +26,7 @@ import com.example.perlinnoise.ui.theme.PerlinNoiseTheme
 
 const val WIDTH = 200
 const val BOX_SIZE = 32
+const val SMALL_BOX_SIZE = 16
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -54,6 +55,8 @@ fun Greeting(name: String) {
 enum class PERLIN_APP_TYPE(val value: String, val func: @Composable () -> Unit) {
     PERLIN_NOISE_ART("Perlin Art", { PerlinNoiseArt() }),
     PERLIN_INTERPOLATOR("Perlin Interpolator", { PerlinInterpolator() }),
+    SMALL_PERLIN_INTERPOLATOR("Small Perlin Interpolator", { SmallPerlinInterpolator() }),
+    MULTI_PERLIN_INTERPOLATOR("Multi Perlin Interpolator", { MultiPerlinNoise() }),
     MULTI_INTERPOLATOR("Multi Interpolator", { MultiInterpolator() }),
 }
 

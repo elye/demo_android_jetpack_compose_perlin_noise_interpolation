@@ -1,4 +1,4 @@
-package math
+package com.example.perlinnoise.math
 
 import kotlin.math.max
 import kotlin.math.min

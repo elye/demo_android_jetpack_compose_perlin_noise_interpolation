@@ -7,8 +7,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PointMode
+import com.example.perlinnoise.math.Vector2D
 import com.example.perlinnoise.math.noise2D
-import math.Vector2D
 
 @Composable
 fun PerlinNoiseArt() {

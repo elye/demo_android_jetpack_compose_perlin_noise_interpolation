@@ -1,4 +1,4 @@
-package math
+package com.example.perlinnoise.math
 
 import java.util.concurrent.ThreadLocalRandom
 import kotlin.math.ln

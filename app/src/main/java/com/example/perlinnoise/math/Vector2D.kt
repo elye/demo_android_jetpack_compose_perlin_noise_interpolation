@@ -1,4 +1,4 @@
-package math
+package com.example.perlinnoise.math
 
 import androidx.compose.ui.geometry.Offset
 import kotlin.math.acos

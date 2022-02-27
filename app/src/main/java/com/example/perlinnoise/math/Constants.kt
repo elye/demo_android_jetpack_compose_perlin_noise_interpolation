@@ -1,4 +1,4 @@
-package math
+package com.example.perlinnoise.math
 
 /**
  * Constants

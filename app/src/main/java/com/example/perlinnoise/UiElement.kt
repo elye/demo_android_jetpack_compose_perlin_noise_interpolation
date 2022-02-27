@@ -17,19 +17,23 @@ object MainDestinations {
 fun switch(enabled: Boolean) = if (enabled) (WIDTH - BOX_SIZE).dp else 0.dp
 
 @Composable
-fun AnimateBoxHorizontal(dbAnimate: Dp) {
+fun AnimateBoxHorizontal(dbAnimate: Dp,
+                         boxSize: Dp = BOX_SIZE.dp,
+                         width: Dp = WIDTH.dp
+) {
     Box(
         modifier = Modifier
-            .height(BOX_SIZE.dp)
-            .width(WIDTH.dp)
+            .height(boxSize)
+            .width(width)
             .background(Color.Yellow)
     ) {
         Box(
             modifier = Modifier
                 .offset(dbAnimate, 0.dp)
-                .size(BOX_SIZE.dp)
+                .size(boxSize)
                 .background(Color.Red)
         )
     }
-    Spacer(modifier = Modifier.height((BOX_SIZE/2).dp))
+    Spacer(modifier = Modifier.height((boxSize/2)))
 }
+
